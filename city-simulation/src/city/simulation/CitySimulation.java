@@ -6,7 +6,7 @@
 package city.simulation;
 
 /**
- * even more changes
+ * even more changes deleting stuff
  * @author joshua.gross
  */
 public class CitySimulation {
