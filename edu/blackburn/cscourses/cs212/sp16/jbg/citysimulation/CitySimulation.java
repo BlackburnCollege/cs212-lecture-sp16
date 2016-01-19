@@ -12,6 +12,7 @@ package edu.blackburn.cscourses.cs212.sp16.jbg.citysimulation;
 public class CitySimulation {
 
     /**
+     * what happened to my comment?
      * @param args the command line arguments
      */
     public static void main(String[] args) {
