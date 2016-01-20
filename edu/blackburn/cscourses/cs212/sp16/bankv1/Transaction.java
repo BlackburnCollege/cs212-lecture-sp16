@@ -9,10 +9,6 @@ package edu.blackburn.cscourses.cs212.sp16.bankv1;
  *
  * @author joshua.gross
  */
-public class Runner {
-    public static void main(String[] args) {
-        Money m = new Money("USD", 0);
-        System.out.println("currency = " + m.getCurrency());
-        System.out.println("value = " + m.getValue());
-    }
+public class Transaction {
+    
 }
