@@ -1,0 +1,8 @@
+Inheritance:
+
+Rule:
+Everything that is true of the superclass
+is true of the subclass.
+
+Test:
+Subclass is a or is a kind of superclass.
