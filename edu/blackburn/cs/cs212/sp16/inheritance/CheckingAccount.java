@@ -11,12 +11,7 @@ package edu.blackburn.cs.cs212.sp16.inheritance;
  */
 public class CheckingAccount extends Account {
     
-    public CheckingAccount(String ssn) {
-        super("654321");
+    public CheckingAccount(String ssn, String id) {
+        super(ssn, id);
     }
-    
-    public void setSsn(String ssn) {
-        this.ssn = ssn;
-    }
-    
 }
