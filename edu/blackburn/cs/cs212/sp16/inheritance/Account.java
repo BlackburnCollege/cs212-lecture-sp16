@@ -11,13 +11,30 @@ package edu.blackburn.cs.cs212.sp16.inheritance;
  */
 public class Account {
     
-    private String ssn;
+    private String id;
+    private Person owner;
     
-    public Account(String ssn) {
-        this.ssn = ssn;
+    public Account(Person owner, String id) {
+        this.owner = owner;
+        this.id = id;
     }
     
-    public String getSsn() {
-        return this.ssn;
+    public Account() {
+        
     }
+    
+    public Person getOwner() {
+        return this.owner;
+    }
+
+    @Override
+    public String toString() {
+        return "SSN: " + this.getOwner().getSsn() + " Account ID: " + this.getId();
+    }
+    
+    public String getId() {
+        return id;
+    }
+    
+    
 }
