@@ -11,7 +11,9 @@ package edu.blackburn.cs.cs212sp16.bankv2;
  */
 public class Runner {
     public static void main(String[] args) {
-        Account a = new Account(new Money("donuts", 12));
+        //Account a = new Account(new Money("donuts", 12));
+        // can't create an Account because Account is abstract
+        CheckingAccount a = new CheckingAccount(new Money("donuts", 12));
         System.out.println("a's balance = " + a.getBalance());
     }
 }

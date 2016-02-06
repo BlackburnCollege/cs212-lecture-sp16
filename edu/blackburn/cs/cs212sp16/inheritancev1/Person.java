@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.blackburn.cs.cs212.sp16.inheritance;
+package edu.blackburn.cs.cs212sp16.inheritancev1;
 
 /**
  *

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.blackburn.cs.cs212.sp16.inheritance;
+package edu.blackburn.cs.cs212sp16.inheritancev1;
 
 /**
  *
@@ -13,7 +13,7 @@ public class Runner {
     
     public static void main(String[] args) {
         Person p = new Person("Braydon", "L", "Rekart", "123-45-678");
-        Account a = new Account(p, "E137A");
+        CheckingAccount a = new CheckingAccount(p, "E137A");
         System.out.println("a's ssn = " + p.getSsn());
         System.out.println(a);
         

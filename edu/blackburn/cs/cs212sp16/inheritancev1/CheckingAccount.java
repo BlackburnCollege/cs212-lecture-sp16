@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.blackburn.cs.cs212.sp16.inheritance;
+package edu.blackburn.cs.cs212sp16.inheritancev1;
 
 /**
  *
@@ -11,7 +11,7 @@ package edu.blackburn.cs.cs212.sp16.inheritance;
  */
 public class CheckingAccount extends Account {
     
-    public CheckingAccount(String ssn, String id) {
-        super(ssn, id);
+    public CheckingAccount(Person owner, String id) {
+        super(owner, id);
     }
 }
