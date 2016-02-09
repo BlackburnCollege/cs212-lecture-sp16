@@ -14,16 +14,7 @@ public class Runner {
     public static void main(String[] args) {
         //Account a = new Account(new Money("donuts", 12));
         // can't create an Account because Account is abstract
-        CheckingAccount a = new CheckingAccount(new Money("donuts", 12));
         
-        System.out.println("a's balance = " + a.getBalance());
-        
-        Account b = new SavingsAccount(new Money("Danish", 4));
-        
-        b.deposit(new Money("$", 50));
-        
-        Account [] allAccounts = new Account[50];
-        allAccounts[0] = a;
-        allAccounts[1] = b;
+        Account [] allAccounts = new Account[10];
     }
 }

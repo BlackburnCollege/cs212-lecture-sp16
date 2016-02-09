@@ -11,6 +11,6 @@ import edu.blackburn.cs.cs212sp16.bankv2.*;
  *
  * @author joshua.gross
  */
-public class Percentage {
+public class Percentage extends Measurement {
     
 }

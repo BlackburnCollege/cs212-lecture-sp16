@@ -15,15 +15,4 @@ public class SavingsAccount extends Account {
         super(balance);
     }
     
-    @Override
-    public void deposit(Money m) {
-        this.credit(m);
-    }
-
-    @Override
-    public void withdraw(Money m) {
-        this.debit(m);
-    }
-
-    
 }
