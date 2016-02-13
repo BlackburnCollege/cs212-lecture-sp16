@@ -11,9 +11,6 @@ package edu.blackburn.cs.cs212sp16.bankpolymorphism;
  */
 public class CheckingAccount extends Account {
 
-    private int maxCheck = 5;
-    private int currentCheck = 1;
-
     public CheckingAccount(Money balance) {
         super(balance);
     }
@@ -25,10 +22,7 @@ public class CheckingAccount extends Account {
 
     @Override
     public void withdraw(Money m) {
-        if (this.currentCheck <= this.maxCheck) {
-            this.debit(m);
-            this.currentCheck++;
-        }
+        this.debit(m);
     }
 
 }
