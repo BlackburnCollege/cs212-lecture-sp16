@@ -31,7 +31,7 @@ public class WrapperTest {
         System.out.println("i: " + i + " j: " + j);
         System.out.println("iObject: " + iObject + " jObject: " + jObject);
         
-        List<Integer> list = new ArrayList();
+        List<Integer> list = new ArrayList<Integer>();
         list.add(iObject);
         list.add(jObject);
         

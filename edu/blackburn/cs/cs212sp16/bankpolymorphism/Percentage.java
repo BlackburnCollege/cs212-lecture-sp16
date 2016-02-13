@@ -12,5 +12,8 @@ import edu.blackburn.cs.cs212sp16.bankv2.*;
  * @author joshua.gross
  */
 public class Percentage extends Measurement {
+    public Percentage(int value) {
+        super("%", value);
+    }
     
 }
