@@ -16,7 +16,7 @@ public class Runner {
         
         ArrayList al = new ArrayList();
         for (int i = 0; i < Integer.MAX_VALUE - 1; i++) {
-            al.add(new Account());
+            al.add(Account.getRandom());
         }
         
         Account a = (Account) al.get(10);
@@ -25,16 +25,16 @@ public class Runner {
     
 }
 
-class Account {
-    private int id;
-    private static final Random RAND = new Random();
-    
-    public Account() {
-        // found code at http://stackoverflow.com/questions/5887709/getting-random-numbers-in-java
-        this.id = RAND.nextInt(1000);
-    }
-    
-    public int getId() {
-        return this.id;
-    }
-}
+//class Account {
+//    private int id;
+//    private static final Random RAND = new Random();
+//    
+//    public Account() {
+//        // found code at http://stackoverflow.com/questions/5887709/getting-random-numbers-in-java
+//        this.id = RAND.nextInt(1000);
+//    }
+//    
+//    public int getId() {
+//        return this.id;
+//    }
+//}
