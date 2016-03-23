@@ -1,0 +1,29 @@
+
+Stack
+depth(): int
+push(object)
+pop(): object
+
+if first element is null, then when we pop
+we return null, and first element remains null
+and depth remains 0
+
+if the first element is some object, then when
+we pop, we decrement depth by 1, we return first
+element, and first element's next element 
+attribute becomes the new value of first element
+
+Queue
+length(): int
+enqueue(object)
+dequeue(): object
+
+If the first(top) element of a queue
+is null, then the bottom element
+must be null.
+
+If the last(bottom) element of a queue
+is null, does that mean that the first
+(top) element is null?
+
+deixis - what a label is pointing to
