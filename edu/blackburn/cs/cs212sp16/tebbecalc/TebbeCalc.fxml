@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.blackburn.cs.cs212sp16.tebbecalc.TebbeCalcController">
+   <children>
+      <TitledPane animated="false" collapsible="false" text="Clicker">
+        <content>
+          <AnchorPane prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="50.0" layoutY="-20.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TextField fx:id="output" alignment="CENTER" editable="false" maxWidth="50.0" minWidth="50.0" onAction="#handleClick" prefWidth="50.0" promptText="0" />
+                        <Button alignment="BASELINE_CENTER" mnemonicParsing="false" text="Click!" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
