@@ -14,8 +14,8 @@
                <children>
                   <VBox alignment="CENTER" layoutX="50.0" layoutY="-20.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <TextField fx:id="output" alignment="CENTER" editable="false" maxWidth="50.0" minWidth="50.0" onAction="#handleClick" prefWidth="50.0" promptText="0" />
-                        <Button alignment="BASELINE_CENTER" mnemonicParsing="false" text="Click!" />
+                        <TextField fx:id="output" alignment="CENTER" editable="false" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="0" />
+                        <Button alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#handleClick" text="Click!" />
                      </children>
                   </VBox>
                </children>
