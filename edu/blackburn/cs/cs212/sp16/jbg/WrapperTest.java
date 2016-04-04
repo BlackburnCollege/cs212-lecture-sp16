@@ -1,4 +1,4 @@
-package edu.blackburn.cscourses.cs212.sp16.jbg;
+package edu.blackburn.cs.cs212.sp16.jbg;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

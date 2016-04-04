@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.blackburn.cscourses.cs212.sp16.jbg;
+package edu.blackburn.cs.cs212.sp16.jbg;
 
 import java.io.*;
 
