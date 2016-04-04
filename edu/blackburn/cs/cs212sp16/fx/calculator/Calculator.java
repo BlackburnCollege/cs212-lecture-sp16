@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.blackburn.cs.cs212sp16.fxcalculator;
+package edu.blackburn.cs.cs212sp16.fx.calculator;
 
 import java.io.IOException;
 import javafx.application.*;
