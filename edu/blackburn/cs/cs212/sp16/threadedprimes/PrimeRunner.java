@@ -11,21 +11,30 @@ package edu.blackburn.cs.cs212.sp16.threadedprimes;
  */
 public class PrimeRunner {
 
-    public static void main(String[] args) {
-        BadPrimeGenerator bpg = new BadPrimeGenerator();
+    private long start;
+    private long count;
+    private long current;
+    private int generatorCount = 2;
 
-        long start = System.currentTimeMillis();
-        for (long value = 2; value < 1000000; value++) {
-            if (bpg.isPrime(value)) {
-                System.out.println(value + " is prime");
-            } else {
-                System.out.println(value + " is not prime");
-            }
+    public PrimeRunner(long start, long count) {
+        this.start = start;
+        this.count = count;
+        this.current = this.start;
+        BadPrimeGenerator[] bpgs = 
+                new BadPrimeGenerator[this.generatorCount];
+        
+        for(int i = 0; i < bpgs.length; i++ ) {
+            bpgs[i] = new BadPrimeGenerator(this, i);
+            new Thread(bpgs[i]).start();
         }
-        long value = 5473987776L;
-        long runlen = System.currentTimeMillis() - start;
-        System.out.println("Took " + runlen + " milliseconds");
+    }
 
+    public synchronized long getNext() {
+        return current++;
+    }
+
+    public static void main(String[] args) {
+        new PrimeRunner(100000, 100);
     }
 
 }
