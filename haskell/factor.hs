@@ -16,7 +16,10 @@ bp x
 
 findFactors x = findFactors' x x
 
+-- this doesn't work - why not?
 findFactors' x y 
-    | isEvenlyDivisibleBy x y = traceShow(x, y) $ x:(findFactors' x (y-1))
+    | isEvenlyDivisibleBy x y = 
+        traceShow(x, y) $ 
+        y:(findFactors' x (y-1))
     | y > 1 = findFactors' x (y-1)
     | otherwise = [1]
